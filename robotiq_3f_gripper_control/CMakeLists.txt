@@ -77,7 +77,7 @@ target_link_libraries(robotiq_3f_gripper_can_node
   ${catkin_LIBRARIES}
 )
 
-install(PROGRAMS nodes/Robotiq3FGripperSimpleController.py nodes/Robotiq3FGripperStatusListener.py
+catkin_install_python(PROGRAMS nodes/Robotiq3FGripperSimpleController.py nodes/Robotiq3FGripperStatusListener.py
         nodes/Robotiq3FGripperTcpNode.py DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})
 
 install(TARGETS ${PROJECT_NAME} robotiq_3f_gripper_can_node robotiq_3f_gripper_ethercat_node
